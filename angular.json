@@ -63,6 +63,7 @@
               "browserTarget": "pass:build:production"
             },
             "development": {
+          
               "browserTarget": "pass:build:development"
             }
           },
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

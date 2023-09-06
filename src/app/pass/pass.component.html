@@ -1,0 +1,23 @@
+
+  <h2>Password Checker</h2>
+  <input type="password" [(ngModel)]="password" (input)="checkPassword()" placeholder="Enter your password">
+
+    <p [ngClass]="{'valid': hasMinLength, 'invalid': !hasMinLength}">
+      Contains 8 characters
+    </p>
+    <p [ngClass]="{'valid': hasUpperCase, 'invalid': hasUpperCase}">
+      Contains one uppercase letter
+    </p>
+    <p [ngClass]="{'valid': lowercase, 'invalid': lowercase}">
+      Contains one lowercase letter
+    </p>
+    <p [ngClass]="{'valid': specialcase, 'invalid': !specialcase}">
+      Contains one specialcase letter
+    </p>
+    <p [ngClass]="{'valid': number, 'invalid': !number}">
+      Contains one  number
+    </p>
+
+
+
+
